@@ -1,8 +1,8 @@
 
-function loadPosts(){
-   fetch('https://jsonplaceholder.typicode.com/posts')
-   .then(res => res.json())
-   .then(data => displayPosts(data))
+function loadPosts() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(res => res.json())
+        .then(data => displayPosts(data))
 
 }
 /* 
@@ -12,9 +12,9 @@ function loadPosts(){
 4. appenChild
 */
 
-function displayPosts(posts){
+function displayPosts(posts) {
     const postsContainer = document.getElementById('posts-container')
-    for(const post of posts){
+    for (const post of posts) {
         const postDiv = document.createElement('div')
         postDiv.classList.add('post')
         postDiv.innerHTML = `
@@ -24,7 +24,7 @@ function displayPosts(posts){
         `;
         postsContainer.appendChild(postDiv)
     }
-   
+
 }
 loadPosts()
 
