@@ -1,0 +1,91 @@
+ Q-1  : What is an api ?
+<!--                     
+Application Programming Interface (API)
+An API is a universal data format that allows apps to communicate with one another.
+APIs are used in backend development that returns JSON objects and can be used to retrieve (GET), store (POST), update (PATCH), or destroy (DELETE) data. APIs do not have a user interface, so developers can use platforms like Postman to make calls and interact with or test their database. -->
+
+ Q-2  : What are the http methods do supported by rest ?
+
+<!-- The 5 essential HTTP methods in RESTful API development
+HTTP resources vs. resource collections. ...
+Method 1: POST. POST is the only RESTful API HTTP method that primarily operates on resource collections. ...
+Method 2: PUT. ...
+Method 3: PATCH. ...
+Method 4: GET. ...
+Method 5: DELETE -->
+
+Q-3  : Can you use get request instead of put to create a resource ?
+
+ <!-- No, you are not supposed to use PUT for GET. GET operations should only have view rights, while PUT resource is used for updating a data -->
+
+ Q-4 : What is the difference between put and post ?
+<!-- 
+ The difference between POST and PUT is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times. -->
+
+Q-5 : What is JSON ?
+
+<!-- JSON stands for JavaScript Object Notation. JSON is a lightweight format for storing and transporting data. JSON is often used when data is sent from a server ...
+
+JSON stands for JavaScript Object Notation
+JSON is a lightweight format for storing and transporting data
+JSON is often used when data is sent from a server to a web page
+JSON is "self-describing" and easy to understand -->
+
+Q-6 : What are CRUD operations ?
+
+<!-- CRUD Meaning: CRUD is an acronym that comes from the world of computer programming and refers to the four functions that are considered necessary to implement a .
+
+In computer programming, create, read, update, and delete are the four basic operations of persistent storage. CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information using computer-based forms and reports -->
+
+Q-7 : What is the file extention of JSON ? 
+
+<!-- JSON is a language-independent data format. It was derived from JavaScript, but many modern programming languages include code to generate and parse JSON-format data. JSON filenames use the extension .json . -->
+
+Q-8 : What are the data types supported by JSON  ? 
+
+<!-- JSON supports a value of type String, Number and Boolean. It does not support octal and hexdecimal values.
+
+Valid Data Types
+
+In JSON, values must be one of the following data types:
+a string
+a number
+an object (JSON object)
+an array
+a boolean
+null
+
+JSON values cannot be one of the following data types:
+a function
+a date
+undefined -->
+
+Q-9 : What is the rote of  JSON.strinfify ? 
+
+<!-- The JSON.stringify() method converts a JavaScript value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified. -->
+
+
+Q-10 : Show how to parse a JSON ?
+
+<!-- The easiest way to get data from an API is with fetch , which includes the .json() method to parse JSON responses into a usable JavaScript . -->
+
+
+Q-11 : What is the difference between get and post ?
+<!-- 
+Get vs. Post
+There are many differences between the Get and Post request. Let's see these differences:
+
+GET	POST
+1) In case of Get request, only limited amount of data can be sent because data is sent in header.	
+        In case of post request, large amount of data can be sent because data is sent in body.
+2) Get request is not secured because data is exposed in URL bar.	
+        Post request is secured because data is not exposed in URL bar.
+3) Get request can be bookmarked.
+    	Post request cannot be bookmarked.
+4) Get request is idempotent . It means second request will be ignored until response of first request is delivered	
+        Post request is non-idempotent.
+5) Get request is more efficient and used more than Post.
+    	Post request is less efficient and used less than get. -->
+
+
+
